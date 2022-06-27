@@ -1,0 +1,249 @@
+.cards {
+    height: calc(100vh - 80px - 60px);
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    background-image: linear-gradient(130deg, #e8f8fc 50%, #2d6197 50%);
+    position: relative;
+}
+
+.cards .brandLogo {
+    top: 4%;
+    left: 5%;
+    position: absolute;
+    color: #51b8d5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.cards .brandLogo h2 {
+    color: #51b8d5;
+}
+
+.cards .brandLogo svg {
+    width: 32px;
+    height: 32px;
+    margin-left: 8px;
+}
+
+.cardContainer {
+    height: 55vh;
+    position: relative;
+    top: 10vh;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.cardContainer a {
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    top: 0;
+    left: 0;
+}
+
+.ant-card-body {
+    height: 28vh !important;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    border: 4px solid white;
+    position: relative;
+}
+
+.cardBottom {
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.cardPrice {
+    font-size: 16px;
+    color: white;
+    margin: 0;
+    margin-left: 3%;
+}
+
+.cardBottom svg {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    background-color: #00000066;
+    border-radius: 50%;
+    -webkit-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+}
+
+.cardBottom svg:hover {
+    background-color: #000000b3;
+}
+
+.ant-card-cover img {
+    height: 27vh;
+}
+
+.ant-card {
+    height: 200px !important;
+    border-radius: 30px;
+    color: white;
+    border: none !important;
+}
+
+.ant-card-meta-description,
+.ant-card-meta-title {
+    color: white !important;
+}
+
+.ant-card-meta-description {
+    opacity: 0.7;
+}
+
+.cardContainer:nth-child(2) .ant-card-body {
+    background-color: #08376d;
+}
+
+.cardContainer:nth-child(3) .ant-card-body {
+    background-color: #579064;
+}
+
+.cardContainer:nth-child(4) .ant-card-body {
+    background-color: #950000;
+}
+
+.cardContainer:nth-child(5) .ant-card-body {
+    background-color: #8f6c0a;
+}
+
+.cards ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 45vw;
+    height: 50px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    bottom: 1%;
+    right: 5%;
+    padding: 0;
+    margin: 0;
+}
+
+.cards ul li .up {
+    color: red;
+    position: relative;
+    top: -7px;
+    left: -4px;
+    -webkit-transform: scale(80%);
+    transform: scale(80%);
+}
+
+.cards ul li {
+    color: white;
+    opacity: 0.7;
+}
+
+.cards ul li span {
+    opacity: 1;
+    font-weight: bold;
+    position: relative;
+}
+
+.cards ul li svg {
+    opacity: 1;
+}
+
+.cards ul li:nth-child(1) svg {
+    color: #21ff54;
+}
+
+.cards ul li:nth-child(2) svg {
+    color: #da1111;
+}
+
+@media (max-width: 1025px) {
+    .cardContainer {
+        width: 23% !important;
+        margin: 0;
+    }
+
+    .ant-card {
+        width: 100% !important;
+    }
+
+    .ant-card-cover {
+        width: 100% !important;
+    }
+
+    .ant-card-body {
+        width: 100% !important;
+    }
+
+    .ant-card-meta-title {
+        font-size: 14px !important;
+    }
+
+    .ant-card-meta-description {
+        font-size: 12px !important;
+    }
+
+    .cardBottom svg {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 769px) {
+    .cards ul {
+        width: 70vw;
+    }
+
+    .ant-card-meta-title {
+        font-size: 11px !important;
+    }
+
+    .ant-card-meta-description {
+        font-size: 8px !important;
+    }
+
+    .ant-card-body {
+        height: 20vh !important;
+    }
+
+    .cardBottom h3 {
+        font-size: 12px;
+    }
+
+    .cardBottom svg {
+        width: 20px;
+        height: 20px;
+        padding: 5px;
+    }
+
+    .cardContainer {
+        width: 15%;
+        height: 60% !important;
+    }
+}

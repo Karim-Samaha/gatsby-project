@@ -1,0 +1,55 @@
+.sidebar {
+    width: 2vw;
+    height: 100vh;
+    position: absolute;
+    top: 0%;
+    background-color: #0097c2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    z-index: 999;
+}
+
+.ant-layout-sider {
+    -webkit-box-flex: 0 !important;
+    -ms-flex: 0 0 0px !important;
+    flex: 0 0 0 !important;
+    min-width: 2vw !important;
+}
+
+.sidebar h5 {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+    color: white;
+    overflow-y: visible;
+    white-space: nowrap;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+}
+
+.sidebar img {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+    cursor: pointer;
+}
+
+.sidebar h5:hover {
+    opacity: 0.7;
+}
+
+@media (max-width: 769px) {
+    .ant-layout-sider {
+        display: none;
+    }
+}

@@ -1,0 +1,42 @@
+footer {
+    height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 98vw;
+}
+
+footer h3 {
+    font-weight: 300;
+    color: #324e6d;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.color {
+    color: #51b8d5;
+}
+
+@media (max-width: 996px) {
+    footer h3 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 769px) {
+    footer {
+        width: 100vw !important;
+    }
+
+    footer h3 {
+        font-size: 11px;
+    }
+}
